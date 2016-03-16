@@ -48,7 +48,6 @@ if($is_IE){
 ?>
 
 <body <?php body_class(); ?>>
-	
 	<div class="body-wrapper">
 	<div class="page-gray-box"></div>
 	<?php 

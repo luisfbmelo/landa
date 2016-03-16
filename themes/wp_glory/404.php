@@ -39,8 +39,9 @@ get_header(); ?>
 									<?php _e('It looks like nothing was found at this location. Maybe try to use a search?', 'wpdance' );?>
 								</p>
 								
+								
 							</div>
-							<?php if(isset($wd_data['wd_page404_content'])) echo do_shortcode(stripslashes($wd_data['wd_page404_content']));?>
+							<?php //if(isset($wd_data['wd_page404_content'])) echo do_shortcode(stripslashes($wd_data['wd_page404_content']));?>
 						</div>
 					</div>
 				</div>

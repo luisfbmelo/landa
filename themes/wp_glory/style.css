@@ -5336,7 +5336,7 @@ div.pp_woocommerce .pp_close:hover {background:#ed764f;}
 	font-size: 200px;
 	font-weight: 700;
 }
-.error404 .site-main  * { color: #fff;line-height: 100%; margin-bottom: 16px}
+.error404 .site-main  * { color: #fff;line-height: 100%; /*margin-bottom: 16px*/}
 
 .error404 .site-main .subscribe_widget form{
 	border-color: #fff;

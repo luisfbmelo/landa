@@ -20,4 +20,5 @@ $wp_roles->remove_role("bbp_participant");
 $wp_roles->remove_role("bbp_moderator");
 $wp_roles->remove_role("bbp_spectator");
 $wp_roles->remove_role("bbp_blocked");*/
+
 ?>
