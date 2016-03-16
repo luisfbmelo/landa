@@ -1,0 +1,57 @@
+<?php
+extract(shortcode_atts(array(
+    'title_align' => '',
+    'el_width' => '',
+    'style' => '',
+    'color' => '',
+    'accent_color' => '',
+    'el_class' => '',
+	'up' => '',
+    'down' => '',	
+    'thickness' => 2
+), $atts));
+$class = "vc_separator wpb_content_element";
+
+$class .= ($title_align!='') ? ' vc_'.$title_align : '';
+$class .= ($el_width!='') ? ' vc_el_width_'.$el_width : ' vc_el_width_100';
+$class .= ($style!='') ? ' vc_sep_'.$style : '';
+$class .= ($color!='') ? ' vc_sep_color_'.$color : '';
+
+$inline_css = 'style="';
+if($accent_color != ""){
+	$inline_css .= "border-color:". $accent_color .";";
+}
+if($thickness != ""){
+	$inline_css .= "border-width:". $thickness ."px;";
+}
+if($style == 'double'){
+	$inline_css .= "height:". (3+$thickness) ."px;";
+}
+$inline_css .= '"';
+
+$class .= $this->getExtraClass($el_class);
+$css_class = apply_filters(VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, $class, $this->settings['base']);
+
+$output_wrapper = 'style="';
+if($up != ""){
+	$output_wrapper .= "margin-top:". $up ."px;";
+}
+if($down != ""){
+	$output_wrapper .= "margin-bottom:". $down ."px;"; 
+}
+$output_wrapper .= '"';
+
+
+$new_css = 'style="top:-'.(17-($thickness/2)).'px;';
+if($accent_color != ""){
+	$new_css .= "color:". $accent_color .";";
+}
+$new_css .= '"';
+
+?>
+<div class="<?php echo esc_attr(trim($css_class)); ?>" <?php echo $output_wrapper; ?>>
+	<span class="vc_sep_holder vc_sep_holder_l"><span <?php echo $inline_css; ?> class="vc_sep_line"></span></span>
+	<?php if($style=='new'): ?><span class="vc_sep_new fa fa-circle" <?php echo $new_css;?>></span><?php endif; ?>
+	<span class="vc_sep_holder vc_sep_holder_r"><span <?php echo $inline_css; ?> class="vc_sep_line"></span></span>
+</div>
+<?php echo $this->endBlockComment('separator')."\n";

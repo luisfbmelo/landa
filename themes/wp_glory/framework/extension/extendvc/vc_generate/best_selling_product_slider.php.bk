@@ -1,0 +1,198 @@
+<?php
+
+// **********************************************************************// 
+
+// ! Register New Element: WD Feature Product
+
+// **********************************************************************//
+
+// ! File Security Check
+if ( ! defined( 'ABSPATH' ) ) { exit; }
+
+$args = array(
+	'number'     => '',
+	'orderby'    => 'name',
+	'order'      => 'ASC',
+	'hide_empty' => true,
+	'include'    => array()
+);
+
+// **********************************************************************// 
+// ! Register New Element: WD Feature Products
+// **********************************************************************//
+$feature_product_params = array(
+	"name" => __("WD Best selling products"),
+	"base" => "wd_best_selling_product_slider",
+	"icon" => "icon-wpb-wpdance",
+	"category" => __('WPDance Slider'),
+	"params" => array(
+	
+		// Heading
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Heading"),
+			"admin_label" => true,
+			"param_name" => "title",
+			"value" => "",
+			"description" => __(""),
+		),
+		
+		// Heading
+		array(
+			"type" => "textarea",
+			"class" => "",
+			"heading" => __("Description"),
+			"admin_label" => true,
+			"param_name" => "desc",
+			"value" => "",
+			"description" => __(""),
+		),
+		
+		// Columns
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Columns"),
+			"admin_label" => true,
+			"param_name" => "columns",
+			"value" => "4",
+			"description" => __(""),
+		),
+				
+		// add Row
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Row"),
+			"admin_label" => true,
+			"param_name" => "row",
+			"value" => "1",
+		),
+		
+		// category
+		array(
+			"type" => "wd_taxonomy",
+			"taxonomy" => "product_cat",
+			"class" => "",
+			"heading" => __("Category Slug"),
+			"admin_label" => true,
+			"param_name" => "cat_slug",
+			"value" => "",
+			"description" => __("")
+		),
+		
+		array(
+			"type" => "dropdown",
+			"class" => "",
+			"heading" => __("Show type"),
+			"admin_label" => true,
+			"param_name" => "show_type",
+			"value" => array(
+				"Grid" => "grid",
+				"List" => "list"
+			),
+			"description" => __("")
+		),	
+		
+		// Big product
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Big Product"),
+			"admin_label" => true,
+			"param_name" => "big_product",
+			"value" => "",
+			"description" => __("Enter product id")
+		),
+		
+		// add Layout dropdown
+		/*
+		array(
+			"type" => "dropdown",
+			"class" => "",
+			"heading" => __("Layout"),
+			"admin_label" => true,
+			"param_name" => "layout",
+			"value" => array(
+				"Small" => "small",
+				"Big" => "big"
+			),
+			"description" => __("")
+		),
+		*/
+		
+		// add Row
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Limit"),
+			"admin_label" => true,
+			"param_name" => "per_page",
+			"value" => "8",
+			"description" => __("Limit number of product")
+		),
+		// Title
+		/*
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Heading"),
+			"admin_label" => true,
+			"param_name" => "title",
+			"value" => "",
+			"description" => __("")
+		),
+		
+		// desc
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Description"),
+			"admin_label" => true,
+			"param_name" => "desc",
+			"value" => "",
+			"description" => __("")
+		),
+		
+		// product_tag
+		array(
+			"type" => "textfield",
+			"class" => "",
+			"heading" => __("Product Tags"),
+			"admin_label" => true,
+			"param_name" => "product_tag",
+			"value" => "",
+			"description" => __("Get all products have this tag")
+		),
+		*/
+		// add nav dropdown
+		array(
+			"type" => "dropdown",
+			"class" => "",
+			"heading" => __("Show Nav"),
+			"admin_label" => true,
+			"param_name" => "show_nav",
+			"value" => array(
+				"Yes" => "1",
+				"No" => "0"
+			),
+		),
+		
+		// add icon nav dropdown
+		array(
+			"type" => "dropdown",
+			"class" => "",
+			"heading" => __("Show Pagination"),
+			"admin_label" => true,
+			"param_name" => "show_icon_nav",
+			"value" => array(
+				"Yes" => "1",
+				"No" => "0"
+			),
+			"description" => __("")
+		)
+	)
+);
+vc_map( $feature_product_params );
+?>

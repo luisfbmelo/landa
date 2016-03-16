@@ -1,0 +1,12 @@
+<?php
+/*
+*	Template Name: Theme option extract
+*/
+get_header(); 
+global $wd_data, $page_datas,$post;
+?>
+<pre>
+<?php echo base64_encode( serialize( $wd_data ) );?>
+</pre>
+
+<?php get_footer(); ?>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items>
+	<item>
+		<name>Body Font</name>
+		<slug>body_font</slug>
+		<type>google_font</type>
+		<std>Lato</std>
+		<selector>body, .nav .fa-1x ul.sub-menu *, .nav .fa-2x ul.sub-menu *, .nav.fa-3x ul.sub-menu *, .nav.fa-4x ul.sub-menu *, #bbpress-forums *, .widget_nav_menu a</selector>
+	</item>
+	<item>
+		<name>Heading Font</name>
+		<slug>heading_font</slug>
+		<type>google_font</type>
+		<std>Lato</std>
+		<selector> h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6</selector>
+	</item>
+	<item>
+		<name>Heading Font 1</name>
+		<slug>heading_font_1</slug>
+		<type>google_font</type>
+		<std>Quicksand</std>
+		<selector>h1, .h1</selector>
+	</item>
+	<item>
+		<name>Menu Font</name>
+		<slug>menu_font</slug>
+		<type>google_font</type>
+		<std>Lato</std>
+		<selector>.nav .main-menu, .nav .main-menu > ul > li > a </selector>
+	</item>
+</items>
