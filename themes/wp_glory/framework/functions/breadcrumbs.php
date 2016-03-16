@@ -53,12 +53,12 @@ if(!function_exists('dimox_breadcrumbs')){
 					if(strcmp('Portfolio Item',$post_type->labels->singular_name)==0){
 						$post_type_name = __('Portfolio','wpdance');
 					}
-					if(strcmp('Product',$post_type->labels->singular_name)==0){
+					if(strcmp(__('Product','wpdance'),$post_type->labels->singular_name)==0){
 						$post_type_name = __('Shop','wpdance');
 					}
-					
+
 					if($rewriteUrl){
-						echo '<a href="' . $homeLink .'/' . $slug['slug'] . '/">' . $post_type_name . '</a> ' /*. $delimiter . ' '*/;
+						echo '<a href="' . $homeLink .'' . $slug['slug'] . '/">'. $post_type_name . '</a> ' /*. $delimiter . ' '*/;
 					}else{
 						echo '<a href="' . $homeLink . '/?post_type=' . get_post_type() . '">' . $post_type_name . '</a> ' /*. $delimiter . ' '*/;
 					}
@@ -87,7 +87,7 @@ if(!function_exists('dimox_breadcrumbs')){
 				if(strcmp('Portfolio Item',$post_type->labels->singular_name)==0){
 					$post_type_name = __('Portfolio','wpdance');
 				}
-				if(strcmp('Product',$post_type->labels->singular_name)==0){
+				if(strcmp(__('Product','wpdance'),$post_type->labels->singular_name)==0){
 					$post_type_name = __('Shop','wpdance');
 				}
 			

@@ -4,7 +4,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Sun Feb 21 2016 12:51:54 GMT-0100 (Hora padrão dos "
 "Açores)\n"
-"PO-Revision-Date: Tue Mar 08 2016 21:57:26 GMT-0100 (Hora padrão dos Açores)\n"
+"PO-Revision-Date: Wed Mar 16 2016 21:47:56 GMT-0100 (Hora padrÃ£o dos "
+"AÃ§ores)\n"
 "Last-Translator: admin <luisfbmelo91@gmail.com>\n"
 "Language-Team: \n"
 "Language: Portuguese (Portugal)\n"
@@ -3520,7 +3521,7 @@ msgstr ""
 #: ../framework/functions/breadcrumbs.php:57 ../framework/functions/breadcrumbs.
 #: php:91
 msgid "Shop"
-msgstr ""
+msgstr "Loja"
 
 #: ../framework/functions/breadcrumbs.php:95 ../framework/functions/breadcrumbs.
 #: php:167
@@ -4033,11 +4034,6 @@ msgstr ""
 #, php-format
 msgid "Original: %s"
 msgstr ""
-
-#: ../framework/functions/wdmenus-admin.php:385 ../woocommerce/wishlist.php:36 ..
-#: woocommerce/myaccount/my-orders.php:76
-msgid "Cancel"
-msgstr "Cancelar"
 
 #: ../framework/functions/wdmenus-init.php:23
 msgid "shop by departments"
@@ -5649,19 +5645,6 @@ msgstr ""
 msgid "Totals"
 msgstr ""
 
-#: ../woocommerce/checkout/form-pay.php:80
-msgid ""
-"Sorry, it seems that there are no available payment methods for your "
-"location. Please contact us if you require assistance or wish to make "
-"alternate arrangements."
-msgstr ""
-"Pedimos desculpa mas não existem métodos de pagamento para este local. "
-"Contate-nos se necessitar de alguma ajuda."
-
-#: ../woocommerce/checkout/form-pay.php:90
-msgid "Pay for order"
-msgstr "Pagar a encomenda"
-
 #: ../woocommerce/checkout/review-order.php:59
 msgid "Coupon:"
 msgstr ""
@@ -5719,10 +5702,6 @@ msgid "%s download remaining"
 msgid_plural "%s downloads remaining"
 msgstr[0] ""
 msgstr[1] ""
-
-#: ../woocommerce/myaccount/my-orders.php:69
-msgid "Pay"
-msgstr "Pagar"
 
 #: ../woocommerce/myaccount/review-order.php:12
 #, php-format
@@ -5875,6 +5854,28 @@ msgstr ""
 #. Author URI of the theme
 msgid "http://wpdance.com/"
 msgstr ""
+
+#: ../framework/functions/wdmenus-admin.php:385 ../woocommerce/wishlist.php:36 ..
+#: woocommerce/myaccount/my-orders.php:76
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../woocommerce/checkout/form-pay.php:80
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+"Pedimos desculpa mas não existem métodos de pagamento para este local. "
+"Contate-nos se necessitar de alguma ajuda."
+
+#: ../woocommerce/checkout/form-pay.php:90
+msgid "Pay for order"
+msgstr "Pagar a encomenda"
+
+#: ../woocommerce/myaccount/my-orders.php:69
+msgid "Pay"
+msgstr "Pagar"
 
 #: ../woocommerce/myaccount/my-orders.php:60
 #, php-format
